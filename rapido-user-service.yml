@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/rapido_userdb
+    username: root
+    password: root
+    
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    
+    
+  application:
+    name: rapid-user-service
+
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      default: ${EUREKA_URI:http://localhost:8761/eureka}
